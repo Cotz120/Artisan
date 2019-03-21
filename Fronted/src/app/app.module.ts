@@ -7,17 +7,22 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
 import { RouterModule, Routes} from '@angular/router';
+import { SerchLobbyComponent } from './serch-lobby/serch-lobby.component';
 
 
 const appRoutes : Routes = [
   {
     path: '', component: LoginComponent
+  },
+  {
+    path: 'serchingLobby', component: SerchLobbyComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    SerchLobbyComponent
   ],
   imports: [
     BrowserModule,
