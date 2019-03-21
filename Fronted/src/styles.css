@@ -1,18 +1,1 @@
 /* You can add global styles to this file, and also import other style files */
-.back{
-    background-image: url(assets/images/background.png);}
-@media(min-width:1024px){
-    .back{
-        background-size: 100%;
-        background-repeat: no-repeat;
-        
-  }
-
-}
-@media(max-width:1025px){
-    .back{
-        background-repeat: repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
-}
