@@ -2,8 +2,10 @@
 <nav style="background-color: #bd2130" class="navbar sticky-top navbar-light">
   <a style="color:white;font-family: 'Gloria Hallelujah', cursive;" class="navbar-brand" href="#"><a style="color:blue">P</a> <a style="color:green">A</a> <a style="color:yellow">I</a> <a style="color:purple">N</a> <a style="color:orangered">T</a>  BATTLE!</a>
   <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="text" placeholder="Usuario" aria-label="Usuario">
-    <input class="form-control mr-sm-2" type="password" placeholder="Contraseña" aria-label="Contraseña">
-    <button class="btn btn-danger my-2 my-sm-0" type="submit">Ingresa</button>
+    <input *ngIf="exitsSession" class="form-control mr-sm-2" type="text" placeholder="Usuario" aria-label="Usuario">
+    <input *ngIf="exitsSession" class="form-control mr-sm-2" type="password" placeholder="Contraseña" aria-label="Contraseña">
+    <button *ngIf="exitsSession" class="btn btn-danger" type="submit">Ingresa</button>
+    <button *ngIf="!exitsSession" class="btn btn-danger mr-sm-3 " type="submit">Editar información</button>
+    <button *ngIf="!exitsSession" class="btn btn-danger" type="submit">Cerrar Sesión</button>
   </form>
 </nav>

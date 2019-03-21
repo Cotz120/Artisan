@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  exitsSession: boolean = true;
+
+  constructor() {
+    if(localStorage.getItem('session')){
+      this.exitsSession = false;
+    }
+   }
 
   ngOnInit() {
   }
