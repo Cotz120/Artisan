@@ -4,11 +4,21 @@
 /*
  * General styles
  */
- body, html {
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
+
+.container{
+    position: absolute !important;
+    top:0px !important;
+    bottom: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0px !important;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url(~/assets/images/background.png);
+    background-size: cover;
+    background-position: center;
 }
+ 
 
 .card-container.card {
     max-width: 350px;
@@ -138,21 +148,4 @@
 .forgot-password:active,
 .forgot-password:focus{
     color: rgb(12, 97, 33);
-}
-.container {
-    margin-right: auto;
-    margin-left: auto;
-}
-@media(min-width:1024px){
-    .container{
-        padding-right: 0px;
-        padding-left: 815px;
-  }
-
-}
-@media(max-width:1200px){
-    .container{
-        padding-right: 0px;
-        padding-left: 0px;
-    }
 }
