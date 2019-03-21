@@ -1,0 +1,16 @@
+.container{
+    height: 90vh;
+}
+
+.row{
+    height: 100%;
+}
+
+.center-buttons{
+    margin: auto;
+}
+
+.table-draw{
+    margin: 20px 20px;
+    height: 450px;
+}

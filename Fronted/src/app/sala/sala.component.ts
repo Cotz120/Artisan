@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SalaComponent implements OnInit {
 
-  constructor() { }
+  guess: string = "Gato"
+
+  constructor() {
+    localStorage.setItem('session', 'True')
+   }
 
   ngOnInit() {
   }
