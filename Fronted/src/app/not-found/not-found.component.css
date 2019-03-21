@@ -1,0 +1,16 @@
+.container{
+    z-index: -1;
+    position: absolute !important;
+    top:0px !important;
+    bottom: 0px !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 100px !important;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url(~/assets/images/background.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
